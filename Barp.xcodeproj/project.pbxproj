@@ -11,7 +11,6 @@
 		A66179642CB527AF00114111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A66179632CB527AF00114111 /* Sparkle */; };
 		A6617AB62CB5398800114111 /* IfritStatic in Frameworks */ = {isa = PBXBuildFile; productRef = A6617AB52CB5398800114111 /* IfritStatic */; };
 		A6617AB92CB539C200114111 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A6617AB82CB539C200114111 /* LaunchAtLogin */; };
-		A6D8E7092CBD5CF300F2D2B7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6D8E7082CBD5CF300F2D2B7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		A66176682CB0800800114111 /* Barp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6D8E7082CBD5CF300F2D2B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -58,7 +56,6 @@
 		A661765F2CB0800800114111 = {
 			isa = PBXGroup;
 			children = (
-				A6D8E7082CBD5CF300F2D2B7 /* README.md */,
 				A661766A2CB0800800114111 /* Barp */,
 				A66176692CB0800800114111 /* Products */,
 			);
@@ -147,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D8E7092CBD5CF300F2D2B7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
