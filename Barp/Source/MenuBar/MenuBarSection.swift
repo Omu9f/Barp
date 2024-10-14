@@ -250,9 +250,7 @@ final class MenuBarSection {
         rehideMonitor?.stop()
 
         guard
-            let appState = menuBarManager?.appState,
-            appState.settingsManager.generalSettingsManager.autoRehide,
-            case .timed = appState.settingsManager.generalSettingsManager.rehideStrategy
+            let appState = menuBarManager?.appState
         else {
             return
         }

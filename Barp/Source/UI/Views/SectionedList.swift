@@ -74,25 +74,6 @@ struct SectionedList<ItemID: Hashable>: View {
             }
         }
         .scrollIndicatorsFlash(trigger: scrollIndicatorsFlashTrigger)
-        .onKeyDown(key: .downArrow) {
-            DispatchQueue.main.async {
-                if let nextSelectableItem {
-                    selection = nextSelectableItem.id
-                }
-            }
-        }
-        .onKeyDown(key: .upArrow) {
-            DispatchQueue.main.async {
-                if let previousSelectableItem {
-                    selection = previousSelectableItem.id
-                }
-            }
-        }
-        .onKeyDown(key: .return) {
-            DispatchQueue.main.async {
-                items.first { $0.id == selection }?.action?()
-            }
-        }
         .task {
             scrollIndicatorsFlashTrigger += 1
         }

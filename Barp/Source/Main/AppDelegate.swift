@@ -1,6 +1,8 @@
 //
 //  AppDelegate.swift
-//  Ice
+//  BarpUI
+//
+//  Created by Moses Varghese on 10/10/24.
 //
 
 import SwiftUI

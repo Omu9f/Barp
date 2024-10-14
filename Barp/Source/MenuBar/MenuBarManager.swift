@@ -357,7 +357,7 @@ final class MenuBarManager: ObservableObject {
         menu.addItem(.separator())
 
         let settingsItem = NSMenuItem(
-            title: "Ice Settings…",
+            title: "Barp Settings…",
             action: #selector(AppDelegate.openSettingsWindow),
             keyEquivalent: ","
         )

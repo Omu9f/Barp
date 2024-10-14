@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A661794E2CB522ED00114111 /* AXSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A661794D2CB522ED00114111 /* AXSwift */; };
-		A66179512CB5245000114111 /* CompactSlider in Frameworks */ = {isa = PBXBuildFile; productRef = A66179502CB5245000114111 /* CompactSlider */; };
 		A66179642CB527AF00114111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A66179632CB527AF00114111 /* Sparkle */; };
 		A6617AB62CB5398800114111 /* IfritStatic in Frameworks */ = {isa = PBXBuildFile; productRef = A6617AB52CB5398800114111 /* IfritStatic */; };
 		A6617AB92CB539C200114111 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A6617AB82CB539C200114111 /* LaunchAtLogin */; };
@@ -45,7 +44,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66179642CB527AF00114111 /* Sparkle in Frameworks */,
-				A66179512CB5245000114111 /* CompactSlider in Frameworks */,
 				A6617AB62CB5398800114111 /* IfritStatic in Frameworks */,
 				A6617AB92CB539C200114111 /* LaunchAtLogin in Frameworks */,
 				A661794E2CB522ED00114111 /* AXSwift in Frameworks */,
@@ -93,7 +91,6 @@
 			name = Barp;
 			packageProductDependencies = (
 				A661794D2CB522ED00114111 /* AXSwift */,
-				A66179502CB5245000114111 /* CompactSlider */,
 				A66179632CB527AF00114111 /* Sparkle */,
 				A6617AB52CB5398800114111 /* IfritStatic */,
 				A6617AB82CB539C200114111 /* LaunchAtLogin */,
@@ -128,7 +125,6 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A661794C2CB522ED00114111 /* XCRemoteSwiftPackageReference "AXSwift" */,
-				A661794F2CB5245000114111 /* XCRemoteSwiftPackageReference "CompactSlider" */,
 				A661795C2CB525DF00114111 /* XCRemoteSwiftPackageReference "Sparkle" */,
 				A6617AB22CB5398800114111 /* XCRemoteSwiftPackageReference "Ifrit" */,
 				A6617AB72CB539C200114111 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
@@ -370,14 +366,6 @@
 				minimumVersion = 0.3.2;
 			};
 		};
-		A661794F2CB5245000114111 /* XCRemoteSwiftPackageReference "CompactSlider" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/buh/CompactSlider.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.6;
-			};
-		};
 		A661795C2CB525DF00114111 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sparkle-project/Sparkle";
@@ -409,11 +397,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A661794C2CB522ED00114111 /* XCRemoteSwiftPackageReference "AXSwift" */;
 			productName = AXSwift;
-		};
-		A66179502CB5245000114111 /* CompactSlider */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A661794F2CB5245000114111 /* XCRemoteSwiftPackageReference "CompactSlider" */;
-			productName = CompactSlider;
 		};
 		A66179632CB527AF00114111 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;

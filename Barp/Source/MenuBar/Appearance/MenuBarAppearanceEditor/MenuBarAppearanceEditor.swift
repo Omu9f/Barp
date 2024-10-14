@@ -48,8 +48,6 @@ struct MenuBarAppearanceEditor: View {
     private var stackBody: some View {
         if appState.menuBarManager.isMenuBarHiddenBySystemUserDefaults {
             cannotEdit
-        } else {
-            mainForm
         }
     }
 
@@ -74,76 +72,10 @@ struct MenuBarAppearanceEditor: View {
     }
 
     @ViewBuilder
-    private var mainForm: some View {
-        IceForm {
-            IceSection {
-                tintPicker
-                shadowToggle
-            }
-            IceSection {
-                borderToggle
-                borderColor
-                borderWidth
-            }
-            IceSection("Menu Bar Shape") {
-                shapePicker
-                isInset
-            }
-            if case .settings = location {
-                IceGroupBox {
-                    AnnotationView(
-                        alignment: .center,
-                        font: .callout.bold()
-                    ) {
-                        Label {
-                            Text("Tip: you can also edit these settings by right-clicking in an empty area of the menu bar")
-                        } icon: {
-                            Image(systemName: "lightbulb")
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    @ViewBuilder
     private var cannotEdit: some View {
         Text("Ice cannot edit the appearance of automatically hidden menu bars")
             .font(.title3)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-    }
-
-    @ViewBuilder
-    private var tintPicker: some View {
-        IceLabeledContent("Tint") {
-            HStack {
-                IcePicker("Tint", selection: appearanceManager.bindings.configuration.tintKind) {
-                    ForEach(MenuBarTintKind.allCases) { tintKind in
-                        Text(tintKind.localized).icePickerID(tintKind)
-                    }
-                }
-                .labelsHidden()
-
-                switch appearanceManager.configuration.tintKind {
-                case .none:
-                    EmptyView()
-                case .solid:
-                    CustomColorPicker(
-                        selection: appearanceManager.bindings.configuration.tintColor,
-                        supportsOpacity: false,
-                        mode: .crayon
-                    )
-                case .gradient:
-                    CustomGradientPicker(
-                        gradient: appearanceManager.bindings.configuration.tintGradient,
-                        supportsOpacity: false,
-                        allowsEmptySelections: false,
-                        mode: .crayon
-                    )
-                }
-            }
-            .frame(height: 24)
-        }
     }
 
     @ViewBuilder
@@ -154,19 +86,6 @@ struct MenuBarAppearanceEditor: View {
     @ViewBuilder
     private var borderToggle: some View {
         Toggle("Border", isOn: appearanceManager.bindings.configuration.hasBorder)
-    }
-
-    @ViewBuilder
-    private var borderColor: some View {
-        if appearanceManager.configuration.hasBorder {
-            IceLabeledContent("Border Color") {
-                CustomColorPicker(
-                    selection: appearanceManager.bindings.configuration.borderColor,
-                    supportsOpacity: true,
-                    mode: .crayon
-                )
-            }
-        }
     }
 
     @ViewBuilder

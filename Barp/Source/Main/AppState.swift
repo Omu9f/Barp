@@ -1,6 +1,8 @@
 //
 //  AppState.swift
-//  Ice
+//  BarpUI
+//
+//  Created by Moses Varghese on 10/10/24.
 //
 
 import Combine
@@ -41,9 +43,6 @@ final class AppState: ObservableObject {
 
     /// Model for app-wide navigation.
     let navigationState = AppNavigationState()
-
-    /// The app's hotkey registry.
-    nonisolated let hotkeyRegistry = HotkeyRegistry()
 
     /// The app's delegate.
     private(set) weak var appDelegate: AppDelegate?

@@ -1,40 +1,9 @@
 //
-//  BarpApp.swift
-//  Barp
+//  BarpUI2App.swift
+//  BarpUI2
 //
-//  Created by Moses Varghese on 10/4/24.
+//  Created by Moses Varghese on 10/11/24.
 //
-
-//import SwiftUI
-//
-//@main
-//struct BarpApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//        
-//        MenuBarExtra("Barp", systemImage: "menubar.rectangle") {
-//            VStack {
-//                Button("High") {
-//                    
-//                }
-//                Button("Medium") {
-//                    
-//                }
-//                Button("Low") {
-//                    
-//                }
-//                
-//                Divider()
-//                
-//                Button("Quit") {
-//                    
-//                }
-//            }
-//        }
-//    }
-//}
 
 import SwiftUI
 
@@ -55,3 +24,4 @@ struct BarpApp: App {
         PermissionsWindow(appState: appState)
     }
 }
+
