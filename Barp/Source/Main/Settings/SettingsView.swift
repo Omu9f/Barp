@@ -69,8 +69,8 @@ struct SettingsView: View {
             MenuBarLayoutSettingsPane()
         case .advanced:
             AdvancedSettingsPane()
-        case .updates:
-            UpdatesSettingsPane()
+//        case .updates:
+//            UpdatesSettingsPane()
         }
     }
 
@@ -91,7 +91,7 @@ struct SettingsView: View {
         case .general: .systemSymbol("gearshape")
         case .menuBarLayout: .systemSymbol("rectangle.topthird.inset.filled")
         case .advanced: .systemSymbol("gearshape.2")
-        case .updates: .systemSymbol("arrow.triangle.2.circlepath.circle")
+//        case .updates: .systemSymbol("arrow.triangle.2.circlepath.circle")
         }
     }
 }

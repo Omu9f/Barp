@@ -347,7 +347,7 @@ final class MenuBarManager: ObservableObject {
         let menu = NSMenu(title: "Ice")
 
         let editItem = NSMenuItem(
-            title: "Edit Menu Bar Appearance…",
+            title: "Edit Menu Bar Appearance",
             action: #selector(showAppearanceEditorPopover),
             keyEquivalent: ""
         )
@@ -357,11 +357,18 @@ final class MenuBarManager: ObservableObject {
         menu.addItem(.separator())
 
         let settingsItem = NSMenuItem(
-            title: "Barp Settings…",
+            title: "Barp Settings",
             action: #selector(AppDelegate.openSettingsWindow),
             keyEquivalent: ","
         )
         menu.addItem(settingsItem)
+        
+        let quitItem = NSMenuItem(
+            title: "Quit Barp",
+            action: #selector(NSApp.terminate),
+            keyEquivalent: "q"
+        )
+        menu.addItem(quitItem)
 
         menu.popUp(positioning: nil, at: point, in: nil)
     }
